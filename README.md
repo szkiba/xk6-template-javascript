@@ -10,22 +10,19 @@
 
 -->
 <!-- begin:api -->
-k6/x/ˮnameˮ
-===========
+xk6-template-javascript
+=======================
 
 ˮsummaryˮ
-
-ˮPrimaryClassˮ
---------------
-
-This is the primary class of the ˮnameˮ extension.
 
 <details><summary><em>Example</em></summary>
 
 ```ts
-import { ˮPrimaryClassˮ } from "k6/x/ˮnameˮ"
+import globalˮPrimaryClassˮ, { ˮPrimaryClassˮ } from "k6/x/ˮnameˮ"
 
 export default function () {
+  console.log(globalˮPrimaryClassˮ.greeting)
+
   let instance = new ˮPrimaryClassˮ("Wonderful World")
   console.log(instance.greeting)
 }
@@ -33,27 +30,7 @@ export default function () {
 
 </details>
 
-### ˮPrimaryClassˮ()
-
-```ts
-constructor(name: string);
-```
-
--	`name` to whom the greeting is addressed
-
-Create a new ˮPrimaryClassˮ instance.
-
-### ˮPrimaryClassˮ.greeting
-
-```ts
-readonly greeting: string;
-```
-
-Greeting message
-<!-- end:api -->
-
-
-un the examples. *If the search path also contains the k6 command, don't forget to specify which k6 you want to run (for example `./k6`\)*.
+The [examples](https://github.com/szkiba/xk6-template-javascript/blob/master/examples) directory contains examples of how to use the xk6-template-javascript extension. A k6 binary containing the xk6-template-javascript extension is required to run the examples. *If the search path also contains the k6 command, don't forget to specify which k6 you want to run (for example `./k6`\)*.
 
 <details>
 <summary><strong>Build</strong></summary>
