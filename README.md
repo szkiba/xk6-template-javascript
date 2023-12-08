@@ -84,5 +84,3 @@ readonly greeting: string;
 
 Greeting message
 <!-- end:api -->
-
-

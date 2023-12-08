@@ -1,4 +1,4 @@
-package ˮnameˮ
+package ˮgoPackageˮ
 
 import (
 	"fmt"
@@ -6,7 +6,7 @@ import (
 	"go.k6.io/k6/js/modules"
 )
 
-//go:generate go run github.com/szkiba/tygor@latest --skeleton index.d.ts
+//go:generate go run github.com/szkiba/tygor@latest --package ˮgoPackageˮ --skeleton index.d.ts
 //go:generate go run github.com/szkiba/tygor@latest doc --inject README.md index.d.ts
 
 func init() {
